@@ -1,2 +1,0 @@
-# LuckyJetWeb
-LuckyJetWeb
