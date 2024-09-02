@@ -1,0 +1,353 @@
+
+
+.page {
+    overflow: hidden;
+    color: white;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.smallt {
+    position: absolute;
+    margin-top: 115px;
+    transition: font-size 0.3s ease;
+    z-index: 5;
+    font-weight: bold;
+
+}
+
+
+
+#waitingText {
+    font-family: 'SF Pro Display', sans-serif;                                            
+    margin-top: 10px;
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+
+.kif {
+    position: absolute;
+    font-family: 'SF Pro Display', sans-serif; 
+    font-size: 45px;
+    margin-top: 150px;
+    font-weight: 900;
+    color: #944ef5;
+    transition: font-size 0.4s ease;
+    z-index: 5;
+}
+
+.text1 {
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 0px;
+    font-size: 70px;
+    font-weight: bold;
+    z-index: 5;
+    transition: font-size 0.3s ease;
+    font-family: 'SF Pro Display', sans-serif; 
+    
+        }
+        .betting {
+            position: absolute;
+            margin-top: 345px;
+            margin-right: 0px;
+            font-size: 80px;
+            font-weight: bold;
+            z-index: 5;
+            transition: font-size 0.3s ease;
+            font-family: 'SF Pro Display', sans-serif; 
+            
+        }
+        .fly {
+            position: absolute;
+            margin-top: 355px;
+            margin-right: 0px;
+            font-size: 60px;
+            font-weight: bold;
+            z-index: 5;
+            transition: font-size 0.4s ease;
+            font-family: 'SF Pro Display', sans-serif; 
+            
+        }
+
+
+.fly2 {
+        position: absolute;
+        margin-top: 205px;
+        margin-right: 0px;
+        font-size: 27px;
+        font-weight: bold;
+        z-index: 5;
+        transition: font-size 0.4s ease;
+        font-family: 'Oswald', sans-serif;    
+}
+
+
+
+.loader {
+    width: 150px;
+    height: 4px;
+    border: 1px solid #261c4a;
+    background-color: #151028;
+    position: absolute;
+    border-radius: 5px; 
+    margin: 270px auto -270px auto;
+}
+
+.loader .bar {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #6b30f9;
+    border-radius: 3px; 
+    position: absolute;
+    transition: width 5s ease; 
+}
+
+@keyframes loading {
+
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+
+.page::before {
+    content: "";
+    background-image: url('images/bg.jpg');
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center top;
+    box-sizing: border-box;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+img {
+   pointer-events: none;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.page__rate-image {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 25px;
+}
+
+.page__rate-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__rate-title {
+    color: #ffc300;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+}
+
+.page__rate-subtitle {
+    font-size: 12px;
+    margin: 0;
+}
+
+.winner {
+  
+    display: block;
+    width: 300px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+.luck {
+   
+    display: block;
+    width: 150px;
+    margin-top: 180px;
+    margin-left: 155px;
+    position: absolute;
+}
+
+.win {
+   
+    display: block;
+    width: 100px;
+    margin-top: 160px;
+    margin-left: 0px;
+    position: absolute;
+}
+
+
+
+.button2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    margin-top: 474px;
+    font-size: 18px;
+    margin-left: -150px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    position: absolute;
+    border: none;
+    display: inline-block;
+    color: rgb(221, 221, 221);
+    text-shadow: rgb(138, 138, 138) 0px 0px 20px;
+    background: linear-gradient(263.87deg, rgb(148, 78, 245) 0%, rgb(92, 36, 252) 100%);
+    box-shadow: rgba(25, 201, 245, 0.1) 0px 10px 20px, rgba(92, 36, 252, 0.1) 0px 10px 20px, rgb(148, 78, 245) 0px -2px 4px inset, rgba(148, 78, 245, 0.6) 0px -8px 8px inset;
+    cursor: pointer;
+
+
+}
+
+
+
+
+.loader2 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #261c4a;
+    background-color: #151028;
+    position: absolute;
+    border-radius: 20px; 
+    margin-top: 340px;
+    margin-left: 0px;
+}
+
+
+
+
+.circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; 
+    position: absolute;
+    border: 5px solid #944ef5;
+    margin-top: 456px;
+    background-color: black;
+    
+    z-index: 1;
+}
+
+.cv {
+    width: 300px; 
+    height: 200px;
+    border-radius: 20px; 
+    border: 1px solid #261c4a;
+    position: relative;
+    display: flex;
+    margin: 120px auto -415px auto;
+    justify-content: center;
+    background-color: #151028;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.rocket {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center top;
+    box-sizing: border-box;
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+    transition: all 0.32s ease 0s;
+    z-index: 5;
+}
+
+
+
+.rocket_fire {
+    position: absolute;
+    width: 65px;
+    margin-top: 205px;
+    margin-right: 130px;
+    animation: fly 4s forwards;
+}
+
+
+
+.rocket_boy {
+    position: absolute;
+    transition: all 0.32s ease 0s;
+    transform: rotate(7deg);
+    width: 65px;
+    margin-top: 150px;
+    margin-right: 50px;
+    display: block;
+    animation: fly 4s forwards;
+}
+
+.obloko {
+    position: absolute;
+    transition: all 0.32s ease 0s;
+    transform: rotate(7deg);
+    width: 300px;
+    margin-top: 110px;
+    margin-left: 600px;
+    display: block;
+    animation: fly1 6s linear infinite;
+    z-index: 2;
+}
+
+.obloko2 {
+    position: absolute;
+    transition: all 0.32s ease 0s;
+    transform: rotate(7deg);
+    width: 300px;
+    margin-top: 110px;
+    margin-left: 0px;
+    display: block;
+    animation: fly1 6s linear infinite;
+    z-index: 2;
+}
+
+
+
+@keyframes fly {
+    0% {
+        transform: translate(-70px, 50px);
+    }
+ 
+  
+    100% {
+        transform: translate(120px, -25px);
+    }
+}
+
+
+@keyframes fly1 {
+    0% {
+    transform: translate(0px, 0px);
+      }
+    
+    100% {
+    transform: translate(-300px, 0px);
+    }
+}
