@@ -1,4 +1,4 @@
-let lastBettingTime = 0; // Добавляем переменную для отслеживания последнего времени "betting"
+let lastBettingTime = 0; 
 
 function getRan(min, max) {
     return Math.random() * (max - min) + min;
