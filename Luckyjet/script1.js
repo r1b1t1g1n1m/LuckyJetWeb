@@ -1,4 +1,4 @@
-let lastBettingTime = 0; 
+let lastBettingTime = 0; // Добавляем переменную для отслеживания последнего времени "betting"
 
 function getRan(min, max) {
     return Math.random() * (max - min) + min;
@@ -21,7 +21,7 @@ async function checkSignal() {
     let responseText2 = document.getElementById('responseText2');
 
     if (state === "betting" && Date.now() - lastBettingTime > 5000) {
-        let resultText = `x${randomNumber1}`;
+        let resultText = `${randomNumber1}x`;
         responseText2.textContent = "";
         document.getElementById("responseText").textContent = resultText;
         localStorage.setItem('resultText', resultText);
@@ -119,3 +119,9 @@ function updateCoefficients(coefficients) {
         
     } 
 }
+
+
+fetchDataAndUpdate();
+setInterval(fetchDataAndUpdate, 100);
+let intervalId = setInterval(checkSignal, 100);
+checkSignal(); 
