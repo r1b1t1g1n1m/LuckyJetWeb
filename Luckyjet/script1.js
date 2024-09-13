@@ -125,3 +125,16 @@ fetchDataAndUpdate();
 setInterval(fetchDataAndUpdate, 100);
 let intervalId = setInterval(checkSignal, 100);
 checkSignal(); 
+
+  function fadeIn() {
+    const preloader = document.querySelector(".preloader")
+    preloader.classList.add("hidden")
+    setTimeout(() => {
+      preloader.style.display = "none"
+      document.body.classList.remove("hidden")
+      document.body.classList.add("fade-in")
+    }, 1000)
+  }
+
+  setTimeout(fadeIn, 3000)
+})
