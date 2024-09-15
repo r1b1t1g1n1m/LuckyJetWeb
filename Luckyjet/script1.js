@@ -21,7 +21,7 @@ async function checkSignal() {
     let responseText2 = document.getElementById('responseText2');
 
     if (state === "betting" && Date.now() - lastBettingTime > 5000) {
-        let resultText = `${randomNumber1}x`;
+        let resultText = `x${randomNumber1}`;
         responseText2.textContent = "";
         document.getElementById("responseText").textContent = resultText;
         localStorage.setItem('resultText', resultText);
@@ -119,9 +119,19 @@ function updateCoefficients(coefficients) {
         
     } 
 }
+function fadeIn() {
+    const preloader = document.querySelector(".preloader")
+    setTimeout(() => {
+      preloader.classList.add("hidden")
+      preloader.style.display = "none"
+      document.body.classList.remove("hidden")
+      document.body.classList.add("fade-in")
+    }, 1700)
+  }
 
 
 fetchDataAndUpdate();
 setInterval(fetchDataAndUpdate, 100);
+fadeIn();
 let intervalId = setInterval(checkSignal, 100);
 checkSignal(); 
